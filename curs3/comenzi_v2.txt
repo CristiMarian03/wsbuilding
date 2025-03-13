@@ -1,0 +1,42 @@
+Pe banner se poate pune si acest efect de scroll-down
+https://codepen.io/Hoebink/pen/YwpxMW
+https://codepen.io/rightblog/pen/EagNMN
+
+Pas1.
+Adaugam about.html, contact.html
+touch src/views/about.html src/views/contact.html
+
+Pas2.
+Adaugam _about.scss , _contact.scss
+
+touch src/scss/_about.scss src/scss/_contact.scss
+
+Pas3.
+in fiserul /src/scss/style.scss importam:
+@use "about";
+@use "contact";
+
+sau 
+
+@import "about";
+@import "contact";
+
+Pas4.
+Actualizam template-ul src/index.html
+
+Pas5.
+Actualizam si fiserul de configurare webpack
+webpack.config.js
+
+Pas6.
+Facem  validarea formularului la fel ca in exemplul de la curs1
+
+Pas7.
+Modificam culorile astfel incat sa fie unitare 
+
+Pas8.
+Adaugam animatia de la skills folosind aceste doua exemple
+https://codepen.io/ArnaudBalland/pen/PwgqMO
+https://codepen.io/mikeshema/pen/ZayeYQ
+
+
