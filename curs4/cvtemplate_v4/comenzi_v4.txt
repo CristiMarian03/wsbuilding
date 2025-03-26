@@ -1,0 +1,37 @@
+Pas1.
+Adaugam o noua sectiune portofoliu
+touch src/views/portfolio.html src/scss/_portfolio.scss
+
+Pas2.
+Instalam  Glightbox https://github.com/biati-digital/glightbox
+npm install glightbox --save
+
+Pas3. in /src/js/main.js  in partea de sus dupa jQuery
+import GLightbox from 'glightbox';
+
+Pas4. in fiserul /src/js/main.js decomentam
+Activam https://biati-digital.github.io/glightbox/ 
+
+const portfolioLightbox = GLightbox({
+    selector: '.portfolio-lightbox'
+});
+
+Pas5.
+Adaugam CSS in /src/scss/styles.scss
+@import "../../node_modules/glightbox/dist/css/glightbox.min.css";
+@import "portfolio";
+
+in _portfolio.scss adaugam pe prima linie daca nu este 
+@use "general" as *; // Importă toate variabilele fără prefix
+
+
+Pas6.
+Actualizam template-ul src/index.html
+
+Pas7.
+Actualizam si fiserul de configurare webpack
+webpack.config.js
+
+Pas8.
+Actualizam  /src/scss/styles.scss
+

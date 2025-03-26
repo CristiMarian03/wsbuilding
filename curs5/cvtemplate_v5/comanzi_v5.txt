@@ -1,0 +1,41 @@
+API GitHub
+Documentatie:
+https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user
+https://github.com/octokit/core.js#readme
+
+Widget:
+https://github.com/Bloggify/github-calendar
+https://github.com/caseyscarborough/github-activity
+
+Demo:
+https://tryapis.com/github/api/repos-list-for-user
+https://jsfiddle.net/wh1t3w0lf21/nT5wY/3/
+
+ Ne propunem sa afisam ultimele 5-10 repozitories in CvTemplate
+
+
+ Metoda aleasa: folosim jQuery + AJAX, fara sa mai instalam nimc 
+ 
+
+Pas1.
+Adaugam o noua sectiune portofoliu
+touch src/views/githubapi.html src/scss/_githubapi.scss
+
+Pas2.
+Actualizam template-ul src/index.html
+
+Pas3.
+Actualizam si fiserul de configurare webpack
+webpack.config.js
+
+Pas4. 
+Actualizare /src/scss/styles.scss
+
+Pas5.
+touch src/js/githubapi.js
+
+in  fisierul src/index.js am adaugat la final
+import "./js/githubapi.js";
+
+ 
+
